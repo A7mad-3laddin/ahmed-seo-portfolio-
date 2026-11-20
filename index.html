@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أحمد علاء الدين — متخصص تحسين محركات البحث (SEO Specialist)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            }
+          },
+          boxShadow: {
+            'glow': '0 0 35px rgba(99, 102, 241, 0.22)',
+            'card-dark': '0 10px 30px -10px rgba(0, 0, 0, 0.55)',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * {
+      font-family: 'Cairo', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+    .glass-nav {
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .case-img-frame {
+      overflow: hidden;
+      border-radius: 0.75rem;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      cursor: zoom-in;
+      position: relative;
+    }
+    .case-img-frame img {
+      transition: transform 0.35s ease;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .case-img-frame:hover img {
+      transform: scale(1.02);
+    }
+    .zoom-badge {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(15, 23, 42, 0.82);
+      color: #f8fafc;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 glass-nav bg-slate-950/80 dark:bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="#" class="flex items-center gap-2.5 shrink-0">
+        <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center text-white font-extrabold text-sm shadow-lg shadow-brand-500/25">
+          SEO
+        </span>
+        <div class="leading-tight">
+          <span class="block font-extrabold text-sm sm:text-base text-white">أحمد علاء الدين</span>
+          <span class="block text-[11px] text-slate-400">SEO Specialist</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-300">
+        <a href="#about" class="hover:text-brand-400 transition">نبذة عني</a>
+        <a href="#results" class="hover:text-brand-400 transition">نتائج Search Console</a>
+        <a href="#experience" class="hover:text-brand-400 transition">الخبرات العملية</a>
+        <a href="#skills" class="hover:text-brand-400 transition">المهارات</a>
+        <a href="#contact" class="hover:text-brand-400 transition">تواصل معي</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5 shrink-0">
+        <button
+          id="themeToggle"
+          type="button"
+          aria-label="تبديل الوضع الليلي والنهاري"
+          class="px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-700 bg-slate-900 text-slate-200 hover:border-brand-500 transition flex items-center gap-1.5"
+        >
+          <span id="themeIcon">☀️</span>
+          <span id="themeLabel" class="hidden sm:inline">نهاري</span>
+        </button>
+
+        <a
+          href="https://wa.me/201146702129"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-md shadow-emerald-600/20"
+        >
+          واتساب مباشر
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="about" class="relative overflow-hidden pt-14 pb-16 sm:pt-20 sm:pb-24 border-b border-slate-800/70">
+      <div class="absolute -top-24 right-1/2 translate-x-1/2 w-[540px] h-[280px] bg-brand-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/25 text-brand-300 text-xs font-bold mb-5">
+            <span>🚀</span>
+            <span>متخصص تحسين محركات البحث وإدارة المحتوى الرقمي</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight mb-5">
+            أحمد علاء الدين — نمو عضوي مستدام وتصدر نتائج البحث
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+            متخصص <strong class="text-white">SEO</strong> بخبرة عملية تمتد من <strong class="text-brand-300">3 إلى 5 سنوات</strong> في رفع معدلات الظهور والنقرات العضوية، وبناء استراتيجيات الكلمات المفتاحية، وتطوير المواقع من الصفر. توليت العمل على موقع <strong class="text-white">Arusp</strong> من الصفر في كافة جوانب السيو: <strong class="text-brand-300">السيو الداخلي (On-Page)</strong>، <strong class="text-brand-300">السيو الخارجي (Off-Page)</strong>، <strong class="text-brand-300">السيو التقني (Technical SEO)</strong>، و<strong class="text-brand-300">كتابة المحتوى</strong>، إلى جانب إدارة وتحسين موقع <strong class="text-white">matbuild.net</strong> ومشاريع ويب متعددة.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 mb-10">
+            <a href="#results" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm transition shadow-lg shadow-brand-600/25">
+              استعراض نتائج Search Console
+            </a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-100 font-bold text-sm transition">
+              ابدأ مشروعك الآن
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick KPIs -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="text-2xl sm:text-3xl font-black text-brand-400 mb-1">3 - 5</div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-300">سنوات خبرة عملية في السيو</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="text-2xl sm:text-3xl font-black text-accent-400 mb-1">+264K</div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-300">ظهور عضوي على matbuild.net</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="text-2xl sm:text-3xl font-black text-emerald-400 mb-1">10.7K</div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-300">نقرات خلال 28 يوماً</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="text-2xl sm:text-3xl font-black text-amber-400 mb-1">Top 7</div>
+            <div class="text-xs sm:text-sm font-semibold text-slate-300">متوسط الترتيب المستهدف</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-16 sm:py-20 border-b border-slate-800/70">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-brand-400">إثباتات الأداء والبيانات الفعلية</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-1 mb-3">نتائج Google Search Console</h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            نماذج حقيقية من تقارير الأداء العضوي وتحسين الظهور والنقرات. اضغط على أي صورة لعرضها بحجم مكبّر.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Case 1 -->
+          <article class="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 flex flex-col justify-between shadow-card-dark">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-lg bg-brand-500/15 text-brand-300 text-xs font-bold">دراسة حالة #1</span>
+                <span class="text-xs text-slate-400">6 أشهر</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-white mb-2">نمو موقع matbuild.net خلال 6 أشهر</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                تحقيق <strong class="text-white">3.87 ألف نقرة</strong> و<strong class="text-white">264 ألف ظهور</strong> مع وصول متوسط الترتيب إلى <strong class="text-emerald-400">6.1</strong> عبر تحسين بنية الصفحات والكلمات المفتاحية.
+              </p>
+            </div>
+            <div
+              class="case-img-frame"
+              onclick="openLightbox('data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22520%22 viewBox=%220 0 900 520%22><rect width=%22900%22 height=%22520%22 fill=%22%230f172a%22/><rect x=%2232%22 y=%2232%22 width=%22836%22 height=%22456%22 rx=%2218%22 fill=%22%231e293b%22 stroke=%22%23334155%22/><text x=%2264%22 y=%2284%22 fill=%22%23f8fafc%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 font-weight=%22bold%22>Google Search Console — matbuild.net (6 Months)</text><rect x=%2264%22 y=%22112%22 width=%22240%22 height=%22100%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%2284%22 y=%22150%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2215%22>Total Clicks</text><text x=%2284%22 y=%22190%22 fill=%22%2338bdf8%22 font-family=%22Arial, sans-serif%22 font-size=%2230%22 font-weight=%22bold%22>3.87K</text><rect x=%22330%22 y=%22112%22 width=%22240%22 height=%22100%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%22350%22 y=%22150%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2215%22>Total Impressions</text><text x=%22350%22 y=%22190%22 fill=%22%23818cf8%22 font-family=%22Arial, sans-serif%22 font-size=%2230%22 font-weight=%22bold%22>264K</text><rect x=%22596%22 y=%22112%22 width=%22240%22 height=%22100%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%22616%22 y=%22150%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2215%22>Average Position</text><text x=%22616%22 y=%22190%22 fill=%22%2334d399%22 font-family=%22Arial, sans-serif%22 font-size=%2230%22 font-weight=%22bold%22>6.1</text><polyline fill=%22none%22 stroke=%22%236366f1%22 stroke-width=%224%22 points=%2280,410 210,385 340,350 470,305 600,275 730,252 820,242%22/><polyline fill=%22none%22 stroke=%22%2338bdf8%22 stroke-width=%224%22 points=%2280,435 210,420 340,398 470,366 600,334 730,304 820,286%22/></svg>`), 'نمو موقع matbuild.net خلال 6 أشهر')"
+            >
+              <img
+                src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'%3E%3Crect width='900' height='520' fill='%230f172a'/%3E%3Crect x='32' y='32' width='836' height='456' rx='18' fill='%231e293b' stroke='%23334155'/%3E%3Ctext x='64' y='84' fill='%23f8fafc' font-family='Arial, sans-serif' font-size='24' font-weight='bold'%3EGoogle Search Console — matbuild.net (6 Months)%3C/text%3E%3Crect x='64' y='112' width='240' height='100' rx='12' fill='%230f172a'/%3E%3Ctext x='84' y='150' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='15'%3ETotal Clicks%3C/text%3E%3Ctext x='84' y='190' fill='%2338bdf8' font-family='Arial, sans-serif' font-size='30' font-weight='bold'%3E3.87K%3C/text%3E%3Crect x='330' y='112' width='240' height='100' rx='12' fill='%230f172a'/%3E%3Ctext x='350' y='150' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='15'%3ETotal Impressions%3C/text%3E%3Ctext x='350' y='190' fill='%23818cf8' font-family='Arial, sans-serif' font-size='30' font-weight='bold'%3E264K%3C/text%3E%3Crect x='596' y='112' width='240' height='100' rx='12' fill='%230f172a'/%3E%3Ctext x='616' y='150' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='15'%3EAverage Position%3C/text%3E%3Ctext x='616' y='190' fill='%2334d399' font-family='Arial, sans-serif' font-size='30' font-weight='bold'%3E6.1%3C/text%3E%3Cpolyline fill='none' stroke='%236366f1' stroke-width='4' points='80,410 210,385 340,350 470,305 600,275 730,252 820,242'/%3E%3Cpolyline fill='none' stroke='%2338bdf8' stroke-width='4' points='80,435 210,420 340,398 470,366 600,334 730,304 820,286'/%3E%3C/svg%3E"
+                alt="دراسة حالة 1 - نمو موقع matbuild.net خلال 6 أشهر"
+              />
+              <span class="zoom-badge">🔍 تكبير</span>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 flex flex-col justify-between shadow-card-dark">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-lg bg-accent-500/15 text-accent-400 text-xs font-bold">دراسة حالة #2</span>
+                <span class="text-xs text-slate-400">مقارنة الأداء</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-white mb-2">مقارنة قبل وبعد تحسين السيو</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                قفزة في الظهور من <strong class="text-white">1.94 ألف</strong> إلى <strong class="text-accent-400">91.2 ألف</strong>، والنقرات من <strong class="text-white">282</strong> إلى <strong class="text-emerald-400">1.67 ألف</strong>، بمتوسط ترتيب <strong class="text-white">7</strong>.
+              </p>
+            </div>
+            <div
+              class="case-img-frame"
+              onclick="openLightbox('data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22520%22 viewBox=%220 0 900 520%22><rect width=%22900%22 height=%22520%22 fill=%22%230f172a%22/><rect x=%2232%22 y=%2232%22 width=%22836%22 height=%22456%22 rx=%2218%22 fill=%22%231e293b%22 stroke=%22%23334155%22/><text x=%2264%22 y=%2284%22 fill=%22%23f8fafc%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 font-weight=%22bold%22>Before vs After SEO Optimization</text><rect x=%2264%22 y=%22116%22 width=%22365%22 height=%22140%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%2284%22 y=%22152%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2216%22>Impressions Growth</text><text x=%2284%22 y=%22198%22 fill=%22%23818cf8%22 font-family=%22Arial, sans-serif%22 font-size=%2228%22 font-weight=%22bold%22>1.94K -> 91.2K</text><rect x=%22465%22 y=%22116%22 width=%22365%22 height=%22140%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%22485%22 y=%22152%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2216%22>Clicks Growth (Avg Pos: 7)</text><text x=%22485%22 y=%22198%22 fill=%22%2334d399%22 font-family=%22Arial, sans-serif%22 font-size=%2228%22 font-weight=%22bold%22>282 -> 1.67K</text><rect x=%2264%22 y=%22290%22 width=%22766%22 height=%22150%22 rx=%2212%22 fill=%22%230f172a%22/><rect x=%22120%22 y=%22395%22 width=%22120%22 height=%2220%22 rx=%224%22 fill=%22%2364748b%22/><rect x=%22280%22 y=%22315%22 width=%22120%22 height=%22100%22 rx=%224%22 fill=%22%236366f1%22/><rect x=%22500%22 y=%22388%22 width=%22120%22 height=%2227%22 rx=%224%22 fill=%22%2364748b%22/><rect x=%22660%22 y=%22325%22 width=%22120%22 height=%2290%22 rx=%224%22 fill=%22%2310b981%22/></svg>`), 'مقارنة قبل وبعد تحسين السيو')"
+            >
+              <img
+                src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'%3E%3Crect width='900' height='520' fill='%230f172a'/%3E%3Crect x='32' y='32' width='836' height='456' rx='18' fill='%231e293b' stroke='%23334155'/%3E%3Ctext x='64' y='84' fill='%23f8fafc' font-family='Arial, sans-serif' font-size='24' font-weight='bold'%3EBefore vs After SEO Optimization%3C/text%3E%3Crect x='64' y='116' width='365' height='140' rx='12' fill='%230f172a'/%3E%3Ctext x='84' y='152' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='16'%3EImpressions Growth%3C/text%3E%3Ctext x='84' y='198' fill='%23818cf8' font-family='Arial, sans-serif' font-size='28' font-weight='bold'%3E1.94K -%3E 91.2K%3C/text%3E%3Crect x='465' y='116' width='365' height='140' rx='12' fill='%230f172a'/%3E%3Ctext x='485' y='152' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='16'%3EClicks Growth (Avg Pos: 7)%3C/text%3E%3Ctext x='485' y='198' fill='%2334d399' font-family='Arial, sans-serif' font-size='28' font-weight='bold'%3E282 -%3E 1.67K%3C/text%3E%3Crect x='64' y='290' width='766' height='150' rx='12' fill='%230f172a'/%3E%3Crect x='120' y='395' width='120' height='20' rx='4' fill='%2364748b'/%3E%3Crect x='280' y='315' width='120' height='100' rx='4' fill='%236366f1'/%3E%3Crect x='500' y='388' width='120' height='27' rx='4' fill='%2364748b'/%3E%3Crect x='660' y='325' width='120' height='90' rx='4' fill='%2310b981'/%3E%3C/svg%3E"
+                alt="دراسة حالة 2 - مقارنة قبل وبعد تحسين السيو"
+              />
+              <span class="zoom-badge">🔍 تكبير</span>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 flex flex-col justify-between shadow-card-dark">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-400 text-xs font-bold">دراسة حالة #3</span>
+                <span class="text-xs text-slate-400">28 يوماً</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-white mb-2">أداء بحث Google خلال 28 يوماً</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                تسجيل <strong class="text-emerald-400">10.7 ألف نقرة</strong> و<strong class="text-white">377 ألف ظهور</strong> خلال فترة قصيرة بفضل استهداف الكلمات البحثية عالية الطلب وتطوير المحتوى.
+              </p>
+            </div>
+            <div
+              class="case-img-frame"
+              onclick="openLightbox('data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22520%22 viewBox=%220 0 900 520%22><rect width=%22900%22 height=%22520%22 fill=%22%230f172a%22/><rect x=%2232%22 y=%2232%22 width=%22836%22 height=%22456%22 rx=%2218%22 fill=%22%231e293b%22 stroke=%22%23334155%22/><text x=%2264%22 y=%2284%22 fill=%22%23f8fafc%22 font-family=%22Arial, sans-serif%22 font-size=%2224%22 font-weight=%22bold%22>Google Search Performance — Last 28 Days</text><rect x=%2264%22 y=%22120%22 width=%22365%22 height=%22130%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%2284%22 y=%22156%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2216%22>Total Clicks (28 Days)</text><text x=%2284%22 y=%22204%22 fill=%22%2334d399%22 font-family=%22Arial, sans-serif%22 font-size=%2232%22 font-weight=%22bold%22>10.7K</text><rect x=%22465%22 y=%22120%22 width=%22365%22 height=%22130%22 rx=%2212%22 fill=%22%230f172a%22/><text x=%22485%22 y=%22156%22 fill=%22%2394a3b8%22 font-family=%22Arial, sans-serif%22 font-size=%2216%22>Total Impressions (28 Days)</text><text x=%22485%22 y=%22204%22 fill=%22%2338bdf8%22 font-family=%22Arial, sans-serif%22 font-size=%2232%22 font-weight=%22bold%22>377K</text><polyline fill=%22none%22 stroke=%22%2310b981%22 stroke-width=%224%22 points=%2280,420 200,395 320,375 440,340 560,315 680,292 820,270%22/><polyline fill=%22none%22 stroke=%22%2338bdf8%22 stroke-width=%224%22 points=%2280,445 200,432 320,410 440,382 560,355 680,328 820,305%22/></svg>`), 'أداء بحث Google خلال 28 يوماً')"
+            >
+              <img
+                src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'%3E%3Crect width='900' height='520' fill='%230f172a'/%3E%3Crect x='32' y='32' width='836' height='456' rx='18' fill='%231e293b' stroke='%23334155'/%3E%3Ctext x='64' y='84' fill='%23f8fafc' font-family='Arial, sans-serif' font-size='24' font-weight='bold'%3EGoogle Search Performance — Last 28 Days%3C/text%3E%3Crect x='64' y='120' width='365' height='130' rx='12' fill='%230f172a'/%3E%3Ctext x='84' y='156' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='16'%3ETotal Clicks (28 Days)%3C/text%3E%3Ctext x='84' y='204' fill='%2334d399' font-family='Arial, sans-serif' font-size='32' font-weight='bold'%3E10.7K%3C/text%3E%3Crect x='465' y='120' width='365' height='130' rx='12' fill='%230f172a'/%3E%3Ctext x='485' y='156' fill='%2394a3b8' font-family='Arial, sans-serif' font-size='16'%3ETotal Impressions (28 Days)%3C/text%3E%3Ctext x='485' y='204' fill='%2338bdf8' font-family='Arial, sans-serif' font-size='32' font-weight='bold'%3E377K%3C/text%3E%3Cpolyline fill='none' stroke='%2310b981' stroke-width='4' points='80,420 200,395 320,375 440,340 560,315 680,292 820,270'/%3E%3Cpolyline fill='none' stroke='%2338bdf8' stroke-width='4' points='80,445 200,432 320,410 440,382 560,355 680,328 820,305'/%3E%3C/svg%3E"
+                alt="دراسة حالة 3 - أداء بحث Google خلال 28 يوماً"
+              />
+              <span class="zoom-badge">🔍 تكبير</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-20 border-b border-slate-800/70">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-brand-400">مسيرة العمل والتنفيذ</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-1 mb-3">الخبرات العملية</h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            تنفيذ متكامل لخطط النمو العضوي وإدارة المواقع وتحسين المحتوى والظهور في محركات البحث.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <h3 class="text-lg font-extrabold text-white">متخصص SEO شامل — مشروع Arusp</h3>
+              <span class="px-2.5 py-1 rounded-lg bg-brand-500/15 text-brand-300 text-xs font-bold">من الصفر</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              العمل على الموقع من الصفر وتأسيس بنيته التسويقية والبحثية عبر كافة مسارات السيو:
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+              <li>• <strong class="text-white">السيو الداخلي (On-Page SEO):</strong> تحسين العناوين، الميتا، الترويسات، والربط الداخلي.</li>
+              <li>• <strong class="text-white">السيو الخارجي (Off-Page SEO):</strong> بناء روابط خلفية وتدعيم السلطة الرقمية.</li>
+              <li>• <strong class="text-white">السيو التقني (Technical SEO):</strong> تهيئة الزحف والأرشفة والسرعة ومعالجة الأخطاء التقنية.</li>
+              <li>• <strong class="text-white">كتابة المحتوى:</strong> صياغة مقالات متوافقة مع السيو ونية الباحث.</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-card-dark">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <h3 class="text-lg font-extrabold text-white">إدارة وتحسين موقع matbuild.net ومشاريع الويب</h3>
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-400 text-xs font-bold">نمو مستمر</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              قيادة استراتيجيات المحتوى والظهور العضوي، وتحليل بيانات Search Console لتحويل الظهور إلى نقرات وزيارات مستهدفة.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+              <li>• بحث وتحليل الكلمات المفتاحية وتقسيمها حسب نية البحث.</li>
+              <li>• تحديث الصفحات القائمة وتحسين معدل النقر (CTR) والترتيب.</li>
+              <li>• بناء وتخصيص مواقع WordPress وإعداد خرائط المواقع والأرشفة.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-20 border-b border-slate-800/70">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-brand-400">الأدوات والمنهجيات</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-1 mb-3">المهارات الأساسية</h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            مجموعة متكاملة من المهارات العملية في تحسين محركات البحث وإنتاج المحتوى وإدارة المواقع.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800">
+            <h3 class="font-extrabold text-white mb-2">السيو الداخلي (On-Page)</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              تحسين العناوين، الوصف التعريفي، هيكلة H1-H3، تحسين الصور، والربط الداخلي الذكي.
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800">
+            <h3 class="font-extrabold text-white mb-2">السيو التقني (Technical)</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              فحص الزحف والأرشفة، ملفات Sitemap وRobots، سرعة الصفحات، وحل مشكلات الفهرسة.
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800">
+            <h3 class="font-extrabold text-white mb-2">السيو الخارجي (Off-Page)</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              بناء روابط خلفية ذات جودة وملاءمة، وتعزيز الموثوقية والظهور الخارجي للموقع.
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800">
+            <h3 class="font-extrabold text-white mb-2">كتابة وتحليل المحتوى</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              كتابة محتوى عربي متوافق مع السيو، تحليل الكلمات المفتاحية، ومتابعة الأداء عبر Search Console.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/95 border border-slate-800 shadow-glow">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-500/15 text-brand-300 text-xs font-bold mb-3">
+            جاهز للتعاون وتطوير مشروعك
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">تواصل مع أحمد علاء الدين</h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-7 leading-relaxed">
+            سواء كنت تؤسس موقعاً جديداً من الصفر أو تسعى لزيادة الزيارات والترتيب في محركات البحث، تواصل مباشرة لمناقشة خطة العمل المناسبة.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://wa.me/201146702129"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition shadow-lg shadow-emerald-600/25"
+            >
+              تواصل عبر واتساب (01146702129)
+            </a>
+            <a
+              href="#results"
+              class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-100 font-bold text-sm transition"
+            >
+              مراجعة النتائج مرة أخرى
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-6 text-center text-xs sm:text-sm text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      © <span id="year"></span> أحمد علاء الدين — متخصص تحسين محركات البحث (SEO Specialist)
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div
+    id="lightboxModal"
+    class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-sm items-center justify-center p-4"
+    onclick="closeLightbox(event)"
+  >
+    <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-700 rounded-2xl p-4 sm:p-6 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between gap-3 mb-4">
+        <h4 id="lightboxTitle" class="text-sm sm:text-base font-extrabold text-white"></h4>
+        <button
+          type="button"
+          onclick="closeLightbox()"
+          class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition"
+        >
+          إغلاق ✕
+        </button>
+      </div>
+      <img id="lightboxImg" src="" alt="" class="w-full h-auto rounded-xl border border-slate-800" />
+    </div>
+  </div>
+
+  <script>
+    const htmlEl = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        htmlEl.classList.add('dark');
+        document.body.className = 'bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white';
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'نهاري';
+      } else {
+        htmlEl.classList.remove('dark');
+        document.body.className = 'bg-slate-50 text-slate-900 antialiased selection:bg-brand-600 selection:text-white';
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'ليلي';
+      }
+    }
+
+    let darkMode = true;
+    themeToggle.addEventListener('click', () => {
+      darkMode = !darkMode;
+      applyTheme(darkMode);
+    });
+
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+
+    function openLightbox(src, title) {
+      lightboxImg.src = src;
+      lightboxImg.alt = title;
+      lightboxTitle.textContent = title;
+      lightboxModal.classList.remove('hidden');
+      lightboxModal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
